@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@media screen and (max-width: 700px) {
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins';
+        font-weight: 400;
+    }
+
+    body {
+        width: 90%;
+        margin: auto;
+    }
+
+    header {
+        margin: 15px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header img {
+        width: 15%;
+    }
+
+    header ul {
+        list-style-type: none;
+        display: flex;
+    }
+
+    header li {
+        margin: 10px;
+        padding: 5px;
+    }
+
+    header a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    header a:hover {
+        color: #017143;
+        border-bottom: 1px solid;
+    }
+
+    section {
+        margin: 40px 0;
+    }
+
+    section h1 {
+        margin-bottom: 30px;
+        font-size: 3em;
+        font-weight: 500;
+        line-height: 110%;
+    }
+
+    section h1 span {
+        color: #017143;
+        font-weight: 700;
+    }
+
+    section p {
+        margin-bottom: 30px;
+    }
+
+    section button {
+        margin-bottom: 30px;
+        padding: 10px 20px;
+        border-radius: 20px;
+        border: none;
+        background-color: #017143;
+        color: #fff;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    section .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+    }
+
+    section .image img {
+        width: 70%;
+        max-height: 100%;
+        /* Defina a altura máxima desejada para a imagem */
+        object-fit: contain;
+        /* Mantém a proporção da imagem */
+    }
+
+    .social-media {
+        padding: 10px 5px;
+        background-color: #017143;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 300px;
+        right: 0px;
+    }
+
+    .social-media i {
+        margin: 7px 0;
+    }
+
+    .options {
+        margin-bottom: 5%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .options img {
+        margin: 0 5%;
+    }
+
+    .options img:hover {
+        transform: translateY(-25px);
+        transition: transform 0.5s;
+    }
+
+    .circle {
+        position: absolute;
+        bottom: -110%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-top-left-radius: 200% 50%;
+        border-top-right-radius: 200% 50%;
+        width: 110%;
+        height: 80%;
+        background-color: #017143;
+        z-index: -1;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .circle {
+        bottom: -90%;
+    }
+}
+
+@media screen and (min-width: 701px) {
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins';
+        font-weight: 400;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    body {
+        width: 80%;
+        margin: auto;
+    }
+
+    header {
+        margin: 3% 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header img {
+        width: 5%;
+    }
+
+    header ul {
+        list-style-type: none;
+        display: flex;
+    }
+
+    header li {
+        margin: 10px;
+        padding: 5px;
+    }
+
+    header a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    header a:hover {
+        color: #017143;
+        border-bottom: 1px solid;
+    }
+
+    section {
+        margin: 40px 0 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    section .main-text {
+        width: 50%;
+    }
+
+    section h1 {
+        margin-bottom: 30px;
+        font-size: 3em;
+        font-weight: 500;
+        line-height: 110%;
+    }
+
+    section h1 span {
+        color: #017143;
+        font-weight: 700;
+    }
+
+    section p {
+        margin-bottom: 30px;
+    }
+
+    section button {
+        margin-bottom: 30px;
+        padding: 10px 20px;
+        border-radius: 20px;
+        border: none;
+        background-color: #017143;
+        color: #fff;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    section .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        width: 30%;
+    }
+
+    section .image img {
+        width: 70%;
+        max-height: 100%;
+        /* Defina a altura máxima desejada para a imagem */
+        object-fit: contain;
+        /* Mantém a proporção da imagem */
+    }
+
+    .social-media {
+        padding: 10px 5px;
+        background-color: #017143;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 250px;
+        right: 10px;
+    }
+
+    .social-media i {
+        margin: 50% 0;
+        font-size: 150%;
+    }
+
+    .options {
+        padding: 30px;
+        margin-bottom: 5%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .options img {
+        margin: 0 5%;
+    }
+
+    .options img:hover {
+        transform: translateY(-25px);
+        transition: transform 0.5s;
+    }
+
+    .circle {
+        position: absolute;
+        bottom: 10%;
+        right: 0%;
+        transform: translate(50%, 50%);
+        border-radius: 50%;
+        width: 70%;
+        padding-top: 70%; /* Define a altura em relação à largura para manter o círculo perfeito */
+        background-color: #017143;
+        z-index: -1;
+    }
+}
+
+* {
+    max-width: 1536px;
+}

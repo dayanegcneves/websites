@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="starbucks, coffee">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/f5f5a081de.js" crossorigin="anonymous"></script>
+    <script src="js/funcoes.js"></script>
+    <title>Starbucks</title>
+</head>
+<body>
+    <div class="circle" id="circle"></div>
+    <!-- Cabeçalho da página - logo e menu de navegação -->
+    <header>
+        <img src="img/logo.png" alt="Logomarca Starbucks">
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">What's New</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção principal da página -->
+    <section>
+        <div class="main-text">
+            <h1>It's not just Coffee <br>It's <span id="span">Starbucks</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at eros a justo placerat convallis. In hac habitasse platea dictumst. Fusce hendrerit in leo nec tempus. Cras non metus mauris.</p>
+            <button id="button">Learn more</button>
+        </div>
+        <div class="image">
+            <img src="img/img1.png" alt="Copo de Frapuccino verde" id="imagem-principal">
+        </div>
+    </section>
+
+    <!-- Redes sociais -->
+    <div class="social-media" id="social-media">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+    </div>
+
+    <!-- Outras opções -->
+    <div class="options">
+        <img src="img/thumb1.png" alt="Copo de frapuccino verde" onclick="trocarImagem('img/img1.png', '#017143')">
+        <img src="img/thumb2.png" alt="Copo de frapuccino rosa" onclick="trocarImagem('img/img2.png', '#E8708C')">
+        <img src="img/thumb3.png" alt="Copo de frapuccino lilas" onclick="trocarImagem('img/img3.png', '#CB3EA2')">
+    </div>
+</body>
+</html>
