@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #212343;
+}
+
+.center {
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+header img {
+    margin: 18px;
+}
+
+.container-box {
+    width: 100%;
+    height: 557px;
+    background-image: url('../img/header_bg.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.form {
+    width: 400px;
+    background-color: #fff;
+    height: 100%;
+    float: right;
+}
