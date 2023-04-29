@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/script.js"></script>
     <title>Danki Code</title>
 </head>
+
 <body>
     <header>
         <div class="center">
@@ -17,9 +20,28 @@
     <div class="container-box">
         <div class="center">
             <div class="form">
-
+                <h2>Preencha o formulário e inicie a sua caminhada para virar um webmaster!</h2>
+                <form action="enviar" method="get" onsubmit="return validarFormulario();">
+                    <div class="input-container">
+                        <label for="nome">Nome*</label>
+                        <input type="text" name="nome" id="nome">
+                    </div>
+                    <div class="input-container">
+                        <label for="email">E-mail*</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="input-container">
+                        <label for="telefone">Telefone*</label>
+                        <input type="tel" name="telefone" id="telefone">
+                    </div>
+                    <p>*Campos obrigatórios</p>
+                    <center>
+                        <input type="submit" value="Enviar" onclick="enviarFormulario();">
+                    </center>
+                </form>
             </div>
         </div>
     </div>
 </body>
+
 </html>
