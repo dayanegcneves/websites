@@ -10,11 +10,13 @@
 header {
     width: 100%;
     height: 60px;
+    padding: 0 2%;
     background-color: #212343;
 }
 
 .center {
-    width: 1280px;
+    max-width: 1280px;
+    width: 100%;
     height: 100%;
     margin: 0 auto;
 }
@@ -25,6 +27,7 @@ header img {
 
 .container-box {
     width: 100%;
+    padding: 0 2%;
     height: 557px;
     background-image: url('../img/header_bg.png');
     background-position: center;
@@ -34,11 +37,29 @@ header img {
 .form {
     width: 400px;
     background-color: #fff;
+    background-clip: padding-box;
     height: calc(100% + 30px);
     position: relative;
     top: -15px;
     float: right;
-    border: 8px solid #ccc;
+    border: 8px solid #cccccc7a;
+}
+
+.container-list {
+    margin-top: 60px;
+    width: 60%;
+    color: #fff;
+    float: left;
+    background-color: #363a6d80;
+}
+
+.container-list ul {
+    list-style-position: inside;
+    padding: 20px;
+}
+
+.container-list li {
+    margin-bottom: 20px
 }
 
 .form h2 {
@@ -99,4 +120,118 @@ header img {
     background-color: #5b61b3;
     transition: 0.5s;
     transform: translateY(-10px);
+}
+
+.container-text {
+    padding: 40px 0 60px 0;
+    background-color: #dddddd;
+    text-align: center;
+}
+
+.container-text h2 {
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.container-text p {
+    width: 80%;
+    display: inline-block;
+    text-align: justify;
+}
+
+.arrow {
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/arrow.png');
+    background-size: 100% 100%;
+    position: relative;
+    top: -20px;
+    left: 50%;
+    margin-left: -20px;
+}
+
+.container-topico {
+    margin: 20px 15px;
+}
+
+.container-topico h2 {
+    margin: 20px -20px 60px 0;
+    text-align: center;
+    color: #595959;
+}
+
+.text-image {
+    margin-bottom: 100px;
+    float: left;
+    width: 33.333%;
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-image h3 {
+    margin: 10px 0;
+}
+
+.text-image p {
+    margin: 10px auto;
+    width: 90%;
+    text-align: justify;
+}
+
+.text-image:hover{
+    background-color: #eeeeee;
+    transition-duration: 0.5s;
+}
+
+footer {
+    clear: both;
+    padding: 30px 0;
+    border-top: 4px solid #888888;
+    text-align: center;
+    color: #595959;
+}
+
+footer h4 {
+    margin-bottom: 10px;
+}
+
+span#rodape-final{
+    color: #212343;
+    font-style: italic;
+}
+
+@media screen and (max-width: 1060px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        height: auto;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .container-list {
+        width: 100%;
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .form {
+        width: 100%;
+        height: calc(100% + 30px);
+        position: relative;
+        top: -15px;
+    }
+
+    .text-image {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .text-image:last-child{
+        margin-bottom: 10px;
+    }
 }
